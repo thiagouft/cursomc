@@ -11,7 +11,6 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
 import com.thiago.cursomc.domain.Categoria;
-import com.thiago.cursomc.domain.Cliente;
 import com.thiago.cursomc.dto.CategoriaDTO;
 import com.thiago.cursomc.repositories.CategoriaRepository;
 import com.thiago.cursomc.services.exception.DataIntegrityException;
