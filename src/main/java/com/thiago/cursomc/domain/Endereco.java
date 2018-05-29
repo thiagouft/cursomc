@@ -61,8 +61,7 @@ public class Endereco implements Serializable{
 	public Endereco() {
 	}
 
-	public Endereco(Integer id, String logradoruro, String numero, String complemtento, String bairro, String cep,
-			Cliente cliente, Cidade cidade) {
+	public Endereco(Integer id, String logradoruro, String numero, String complemtento, String bairro, String cep, Cliente cliente, Cidade cidade) {
 		super();
 		this.id = id;
 		this.logradoruro = logradoruro;
