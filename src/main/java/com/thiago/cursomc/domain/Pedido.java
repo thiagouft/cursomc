@@ -46,13 +46,21 @@ public class Pedido implements Serializable{
 	public Pedido() {	
 	}
 
-	public Pedido(Integer id, Date instate, Cliente cliente, Endereco enderecoDeEntrega) {
+	public Pedido(Integer id, Date instante, Cliente cliente, Endereco enderecoDeEntrega) {
 		super();
 		this.id = id;
-		this.instante = instate;
+		this.instante = instante;
 		//this.pagamento = pagamento;
 		this.cliente = cliente;
 		this.enderecoDeEntrega = enderecoDeEntrega;
+	}
+	
+	public double getValorTotal() {
+		double soma = 0.0;
+		for (ItemPedido ip : itens) {
+			soma = soma + ip.getSubTotal();
+		}
+		return soma;
 	}
 
 	public Integer getId() {
@@ -63,12 +71,12 @@ public class Pedido implements Serializable{
 		this.id = id;
 	}
 
-	public Date getInstate() {
+	public Date getInstante() {
 		return instante;
 	}
 
-	public void setInstate(Date instate) {
-		this.instante = instate;
+	public void setInstante(Date instante) {
+		this.instante = instante;
 	}
 
 	public Pagamento getPagamento() {
