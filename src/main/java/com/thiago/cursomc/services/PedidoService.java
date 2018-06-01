@@ -14,7 +14,6 @@ import com.thiago.cursomc.domain.enums.EstadoPagamento;
 import com.thiago.cursomc.repositories.ItemPedidoRepository;
 import com.thiago.cursomc.repositories.PagamentoRepository;
 import com.thiago.cursomc.repositories.PedidoRepository;
-import com.thiago.cursomc.repositories.ProdutoRepository;
 import com.thiago.cursomc.services.exception.ObjectNotFoundException;
 //import com.thiago.cursomc.services.exception.ObjectNotFoundException;
 
